@@ -79,17 +79,20 @@ class CustomersImport implements ToModel, WithCustomCsvSettings, WithHeadingRow
     {
         $this->rowCount++;
         if ($row['age'] < 18 && $row['age'] > 99) {
-            $this->importedCount['entity_fails'][]['value'] = $row;
-            $this->importedCount['entity_fails'][]['error'] = 'age';
+            $this->importedCount['entity_fails'][$this->rowCount]['value'] = $row;
+            $this->importedCount['entity_fails'][$this->rowCount]['error'] = 'age';
         }
 
         if (!$this->validate($row)->passes()) {
-            $this->importedCount['entity_fails'][]['value'] = $row;
-            $this->importedCount['entity_fails'][]['error'] = 'email';
+            $this->importedCount['entity_fails'][$this->rowCount]['value'] = $row;
+            $this->importedCount['entity_fails'][$this->rowCount]['error'] = 'email';
+        }
+
+        if(isset($this->importedCount['entity_fails'][$this->rowCount]['value'])){
+            return null;
         }
 
         //validate location
-
         if (!$this->validateLocation($row)->passes()) {
             $row['location'] = 'Unknown';
         }
