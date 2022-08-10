@@ -18,7 +18,7 @@ class CreateCustomersTable extends Migration
             $table->string('surname',255)->nullable();
             $table->string('name',255)->nullable();
             $table->string('email',255)->nullable();
-            $table->timestamp('age')->nullable()->default(null);
+            $table->date('age')->nullable()->default(null);
             $table->string('location',255)->nullable()->default(null);
             $table->string('country_code',3)->nullable()->default(null);;
             $table->timestamps();
