@@ -28,13 +28,12 @@ class CustomersImportCommand extends Command
 
     public function handle()
     {
-            $importer = new CustomersImport();
-            $importer ->import( storage_path('РНР_random.csv'));
-        //    var_dump($importer->getImportedCount());
-             $filename = 'customers_error.xlsx';
-            // $collection = collect($importer->getImportedCount());
-             $file =Excel::store(new CustomersExport($importer->getImportedCount()), 'customers_error.xlsx');
-
-             $path = storage_path($filename);
+        $importer = new CustomersImport();
+        $importer->import(storage_path('РНР_random.csv'));
+        $filename = 'customers_error.xlsx';
+        $file = Excel::store(new CustomersExport($importer->getImportedCount()), $filename);
+        $path = substr(storage_path($file), 0, -1) . $filename;
+        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+        $out->writeln($path);
     }
 }
