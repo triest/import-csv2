@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61f385e0-9023-49f0-9a97-ab4e8857defe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="61f385e0-9023-49f0-9a97-ab4e8857defe" name="Default Changelist" comment="Fix import">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/CustomersImportCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CustomersImportCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Imports/CustomersImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/CustomersImport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_08_08_180831_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_08_08_180831_create_customers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,22 +181,50 @@
       <workItem from="1659982067909" duration="5137000" />
       <workItem from="1660030397862" duration="288000" />
       <workItem from="1660030689727" duration="648000" />
-      <workItem from="1660150572007" duration="8024000" />
+      <workItem from="1660150572007" duration="8355000" />
+      <workItem from="1660215487888" duration="3817000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix import">
+      <created>1660159019515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660159019515</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix import">
+      <created>1660159327143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660159327143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix import" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="580" y="88" key="CommitChangelistDialog2" timestamp="1660158993498">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1660216886569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1660158993498" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1660216886569" />
+    <state x="580" y="88" key="CommitChangelistDialog2" timestamp="1660159325750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1660159325750" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1660151600511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1660151600511" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1660159328708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660159328708" />
     <state x="666" y="253" width="587" height="534" key="find.popup" timestamp="1659984883602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

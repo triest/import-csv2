@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Exports\CustomersExport;
 use App\Imports\CustomersImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -27,17 +28,13 @@ class CustomersImportCommand extends Command
 
     public function handle()
     {
-
-
-          //  $resutr =   Excel::import(new CustomersImport, storage_path('РНР_random.csv'));
-          //  var_dump($resutr->getImportedCount);
             $importer = new CustomersImport();
             $importer ->import( storage_path('РНР_random.csv'));
+        //    var_dump($importer->getImportedCount());
+             $filename = 'customers_error.xlsx';
+            // $collection = collect($importer->getImportedCount());
+             $file =Excel::store(new CustomersExport($importer->getImportedCount()), 'customers_error.xlsx');
 
-             var_dump(array_merge(
-                [  ],
-                $importer->getImportedCount()
-                      )
-        );
+             $path = storage_path($filename);
     }
 }
